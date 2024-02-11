@@ -25,26 +25,42 @@ p{
     font-weight: bold;
     padding-left: 50px;
     padding-right: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
     }
 form{
-        padding-left: 50px;
-        padding-right: 50px;
-        text-align: center;  
-    }
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;  
+   }
 #msg1{
-        color: rgb(177, 40, 40);
-        padding-left: 50px;
+    color: rgb(45, 8, 8);
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+    padding-bottom: none;
  }
 #msg2{
-    color: rgb(177, 40, 40);
-    text-align: left;
-    padding-left: 32%;
+    color: rgb(152, 12, 112);
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
+    padding-top: 25px;
+    padding-bottom: none;
 }
-#msg3{
-    color: rgb(177, 40, 40);
-    text-align: left;
-    padding-left: 40%;
+#d{
+    text-align: center;
 }
-input{
-    max-width: 6cm;
+#btn{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(180, 213, 242);
+    font-family: 'Trebuchet MS', sans-serif;
+}
+#btn2{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(216, 168, 195);
+    font-family: 'Trebuchet MS', sans-serif;
 }
