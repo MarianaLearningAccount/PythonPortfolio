@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 1</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<h1>Guessing Game</h1>
+<p>This is a program that generates a random number between 1 and 100 and lets the user guess the number. The program provides feedback ("higher" or "lower") until the user guesses the correct number. The program also keeps track of the number of guesses it takes for the user to guess correctly.</p> 
+<form method="POST">
+    <p id="msg1">Enter your guess:  <input name="guess">
+       <input type="submit">
+       <p id="msg2"> Number of guesses: {{ number }}</p>
+       <p> {{ message }} {{random}} </p>
+   </p> 
+   </form>
+</body>
+</html>

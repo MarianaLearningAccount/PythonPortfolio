@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(216, 240, 204);
+    font-family:'Fira Sans', sans-serif;
+    font-style: italic;
+    padding-top: 25px;
+    }
+h1{
+    color: rgb(14, 65, 110);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    }
+img{ 
+    width: 70px;
+    height: 70px;
+    }
+a{
+    color: rgb(36, 67, 94);
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 20px;
+    }
+p{
+    color: rgb(37, 34, 20);
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+form{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;  
+    }
+#msg1{
+        color: rgb(177, 40, 40);
+        padding-left: 50px;
+ }
+#msg2{
+    color: rgb(177, 40, 40);
+    text-align: left;
+    padding-left: 32%;
+}
+#msg3{
+    color: rgb(177, 40, 40);
+    text-align: left;
+    padding-left: 40%;
+}
+input{
+    max-width: 6cm;
+}
