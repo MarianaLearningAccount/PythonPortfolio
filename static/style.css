@@ -80,13 +80,23 @@ form{
     border: 2px solid #000; 
     border-radius: 5px;
     padding: 20px; 
-    width: 400px; 
+    width: 500px; 
     height: 150px; 
     margin: 20px auto;
+    padding-bottom: 20px;
+    text-align: center;
 }
 input{
     font-size: medium;
+    size: 10cm;
+
 }
 .container{
     text-align: right;
+}
+#pr4{
+    text-align: center;
+}
+ol{
+    text-align: left;
 }

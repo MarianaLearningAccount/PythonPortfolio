@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 4</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<h1>Password Strength Checker</h1>
+<a href="{{ url_for('home')}}">Home Page</a>
+<div class="container">
+    <a id="prev" href="{{ url_for('program3')}}">Previous</a>
+    <a id="next" href="{{ url_for('program5')}}">Next</a>
+</div>
+<br>
+<div id="pr4">
+<p>This program checks password strength against the following criteria:
+
+<ol>
+    <b><li>Is at least 8 characters long</li>
+    <li>Contains at least one uppercase letter</li>
+    <li>Contains at least one lowercase letter</li>
+    <li>Contains at least one digit</li>
+    <li>Contains at least one special character (e.g., !@#$%^&*).</li></b>
+</ol>
+</p> 
+</div>
+<br>
+<div id="content2">
+<form method="POST">
+    <input name="pswd" placeholder="Enter password here:">
+    <button id="btn" type="submit"> Click to check!</button>
+    <p id="msg1"> Result: {{ result }} </p>
+   </form>
+</div>
+</body>
+</html>

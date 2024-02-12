@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<h1>Email Validator</h1>
+<a href="{{ url_for('home')}}">Home Page</a>
+<div class="container">
+    <a id="prev" href="{{ url_for('program4')}}">Previous</a>
+    <a id="next" href="{{ url_for('program5')}}">Next</a>
+</div>
+<br>
+<div id="pr4">
+    <p>This program checks email validity against the following criteria:
+    <ol>
+        <b>
+<li>It contains a single "@" symbol.</li>  
+<li>It contains at least one dot (.) after the "@" symbol.</li>            
+<li>The username name (before "@" symbol) has at leats a letter or a number.</li>    
+<li>The mail server name (after "@" symbol) has at leats a letter or a number.</li>
+<li>The domain name (after the last dot) has at least two characters.</li><b>
+</ol>
+</p> 
+</div>
+<br>
+<div id="content2">
+<form method="POST">
+    <input name="email" placeholder="Enter email here:">
+    <button id="btn" type="submit"> Click to check!</button>
+    <p id="msg1"> Result: {{ result }} </p>
+   </form>
+</div>
+</body>
+</html>
