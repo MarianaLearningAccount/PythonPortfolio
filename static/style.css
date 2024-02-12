@@ -57,10 +57,36 @@ form{
     cursor: pointer;
     background-color: rgb(180, 213, 242);
     font-family: 'Trebuchet MS', sans-serif;
+    padding: 3px;
 }
 #btn2{
     border-radius: 5px;
     cursor: pointer;
     background-color: rgb(216, 168, 195);
     font-family: 'Trebuchet MS', sans-serif;
+    padding: 3px;
+}
+#content{
+    background-color: rgb(124, 212, 151);
+    border: 2px solid #000; /* Border style */
+    border-radius: 5px;
+    padding: 20px; 
+    width: 600px; 
+    height: 280px; 
+    margin: 20px auto;
+}
+#content2{
+    background-color: rgb(124, 212, 151);
+    border: 2px solid #000; 
+    border-radius: 5px;
+    padding: 20px; 
+    width: 400px; 
+    height: 150px; 
+    margin: 20px auto;
+}
+input{
+    font-size: medium;
+}
+.container{
+    text-align: right;
 }
