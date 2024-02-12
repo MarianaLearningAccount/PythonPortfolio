@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program 2</title>
+    <title>Program 3</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-<h1>Time Converter</h1>
+<h1>Temperature Converter</h1>
 <a href="{{ url_for('home')}}">Home Page</a>
 <div class="container">
-    <a id="prev" href="{{ url_for('program1')}}">Previous</a>
-    <a id="next" href="{{ url_for('program3')}}">Next</a>
+    <a id="prev" href="{{ url_for('program2')}}">Previous</a>
+    <a id="next" href="{{ url_for('program4')}}">Next</a>
 </div>
 <br>
-<p>This program takes time from user input in the following format: "11:20 PM" or "02:00 AM". And converts it to 24-Hour format: "23:20" or "02:00".</p> 
+<p>This program converts Celsius to Fahrenheit, and vice versa. It takes temperature from user input in the following format: "77.0 F" or "37.0 C", and outputs "25.0 C" or "98.6 F" respectively.</p> 
 <br>
 <div id="content2">
 <form method="POST">
-    <input name="time" placeholder="Enter time here:">
+    <input name="temp" placeholder="Enter temperature here:">
     <button id="btn" type="submit"> Click to convert!</button>
     <p id="msg1"> Result: {{ result }} </p>
    </form>
