@@ -27,7 +27,7 @@ def program1():
        user_guess = int(request.form['guess']) 
        attempts += 1
        if user_guess == random_num:
-          message = f'Bingo! You guessed the number in {attempts} attempts! Random number: {random_num}' 
+          message = f'Bingo! You guessed the random number: {random_num} in {attempts} attempts!' 
           reset_game()
        elif user_guess < random_num:
           message = "Ups! Try again and choose a higher number!"
@@ -45,8 +45,7 @@ def program2():
     result = ''
     converted_time = None
     if request.method == 'POST':
-        form = request.form
-        user_time = form['time']
+        user_time = request.form['time']
         time_list = user_time.split(" ")
 
         if time_list[1].lower() == "pm":

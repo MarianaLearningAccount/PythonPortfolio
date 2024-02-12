@@ -8,11 +8,16 @@
 </head>
 <body>
 <h1>Guessing Game</h1>
-<a href="{{ url_for('home')}}">Home Page</a>
+<a id="home" href="{{ url_for('home')}}">Home Page</a>
+<div class="container">
+<a id="next" href="{{ url_for('program2')}}">Next</a>
+</div>
+<br>
 <p>This is a program that generates a random number between 1 and 100 and lets the user guess the number. The program provides feedback ("higher" or "lower") until the user guesses the correct number. The program also keeps track of the number of guesses it takes for the user to guess correctly.</p> 
+<br>
+<div id="content">
  <form method="POST">
     <input name="guess" placeholder="Enter your guess here:">
-    <!-- <input type="submit"> -->
     <button id="btn" type="submit"> Click to check!</button>
    </form> 
    <div id="d">
@@ -22,5 +27,6 @@
   <form action ="/program1/reset" method="POST">
     <button id="btn2" type="submit"> Reset Game!</button>
    </form> 
+  </div>
 </body>
 </html>

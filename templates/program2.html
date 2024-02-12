@@ -9,12 +9,19 @@
 <body>
 <h1>Time Converter</h1>
 <a href="{{ url_for('home')}}">Home Page</a>
+<div class="container">
+    <a id="prev" href="{{ url_for('program1')}}">Previous</a>
+    <a id="next" href="{{ url_for('program2')}}">Next</a>
+</div>
+<br>
 <p>This program takes time from user input in the following format: "11:20 PM" or "02:00 AM". And converts it to 24-Hour format: "23:20" or "02:00".</p> 
+<br>
+<div id="content2">
 <form method="POST">
-    <p id="msg1">Enter time to convert:  <input name="time">
-       <input type="submit"></p> 
+    <input name="time" placeholder="Enter time to convert">
+    <button id="btn" type="submit"> Click to convert!</button>
     <p id="msg1"> Result: {{ result }} </p>
    </form>
-   
+</div>
 </body>
 </html>
